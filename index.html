@@ -1,44 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Boilerplait by wmf23</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/wmf23/boilerplait">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/wmf23/boilerplait/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/wmf23/boilerplait/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <section class="page-header">
+      <h1 class="project-name">Boilerplait</h1>
+      <h2 class="project-tagline">A skeleton app that comes ready with node, express, ejs, react and webpack. Clone boilerplait and start building your react app. </h2>
+      <a href="https://github.com/wmf23/boilerplait" class="btn">View on GitHub</a>
+      <a href="https://github.com/wmf23/boilerplait/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/wmf23/boilerplait/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Boilerplait</h1>
-          <p>A skeleton app that comes ready with node, express, ejs, react and webpack. Clone boilerplait and start building your react app. </p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/wmf23">wmf23</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="boilerplait" class="anchor" href="#boilerplait" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boilerplait</h3>
 
 <p>Boilerplait helps you get started with your react and nodejs app quickly. It helps you spin off a new app with a few simple commands so that you can focus on your application logic rather than worrying about the logistics that go into starting a front/backend app. Boilerplait come in handy in cases where you want to test a new component and you are not certain that the component will fit your needs; in these cases you clone boilerplait and start testing the new component to get to your results faster.</p>
@@ -62,24 +43,18 @@
 <p>There is a lot of basic setup instructions provided here, please skip the steps that you don't need (e.g. you don't have to install webpack if you have already installed it globally).</p>
 
 <ol>
-<li> Install npm:
-1.1 sudo apt-get install npm // if this doesn't work the try the next line
-1.2 curl <a href="https://www.npmjs.org/install.sh">https://www.npmjs.org/install.sh</a> | sudo sh</li>
-<li> Install node:</li>
-<li>  sudo apt-get update</li>
-<li>   sudo apt-get install node</li>
-<li> npm install express -g</li>
-<li> npm install -g express-generator</li>
-<li> Restart your terminal to pick up the latest express</li>
-<li> Install webpack:</li>
-<li>  npm install webpack -g</li>
-<li> git clone <a href="https://github.com/wmf23/boilerplait.git">https://github.com/wmf23/boilerplait.git</a>
-</li>
-<li> npm install</li>
-<li> Start webpack with watch in the background: webpack -w&amp;</li>
-<li>Run the following to start your app:npm start</li>
-<li>Test you app in the web browswer: http://localhost:3000</li>
-<li>Make changes to your react component in components/App.js, e.g.: replace "Hey there, don't you love {this.state.title}" with "Hey there, don't you love {this.state.title} - totally!"</li>
+<li> Install npm:    sudo apt-get install npm // if this doesn't work the try the next line    curl <a href="https://www.npmjs.org/install.sh">https://www.npmjs.org/install.sh</a> | sudo sh
++.  Install node:    sudo apt-get update    sudo apt-get install node
++.  npm install express -g
++.  npm install -g express-generator
++.  Restart your terminal to pick up the latest express
++.  Install webpack:    npm install webpack -g
++.  git clone <a href="https://github.com/wmf23/boilerplait.git">https://github.com/wmf23/boilerplait.git</a>
++.  npm install
++.  Start webpack with watch in the background: webpack -w&amp;
++. Run the following to start your app:npm start
++. Test you app in the web browswer: http://localhost:3000
++. Make changes to your react component in components/App.js, e.g.: replace "Hey there, don't you love {this.state.title}" with "Hey there, don't you love {this.state.title} - totally!"</li>
 </ol>
 
 <h3>
@@ -91,11 +66,16 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with boilerplait? Create an issue in he boilerplait repository or contact <a href="https://github.com/wmf23" class="user-mention">@wmf23</a>.</p>
-      </section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/wmf23/boilerplait">Boilerplait</a> is maintained by <a href="https://github.com/wmf23">wmf23</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
